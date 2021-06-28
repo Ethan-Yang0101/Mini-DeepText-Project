@@ -1,2 +1,2 @@
 # Mini-DeepText-Project
-Simple Version NLP Model Training Tool.
+Simple version NLP model training tool in PyTorch.
