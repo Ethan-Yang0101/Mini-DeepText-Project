@@ -97,3 +97,9 @@ Mini-DeepText aims to quickly implement neural models for text classification, s
 * Python 3
 * PyTorch 0.4+
 * Numpy 1.14.3+
+
+## Acknowledgement
+
+Some public codes are referenced by our toolkit:
+
+* https://github.com/Tencent/NeuralNLP-NeuralClassifier
