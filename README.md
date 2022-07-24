@@ -14,25 +14,25 @@ Mini-DeepText aims to quickly implement neural models for text classification, s
     JSON example:
 
     {
-        "doc_label": ["Computer--MachineLearning--DeepLearning", "Neuro--ComputationalNeuro"],
-        "doc_token": ["I", "love", "deep", "learning"],
-        "doc_keyword": ["deep learning"],
-        "doc_topic": ["AI", "Machine learning"]
+        "source": ["I,love,mini,deeptext,project,very,much"],
+        "target": ["我,非常,喜欢,迷你,DeepText,项目"],
+        "label": ["AI"],
     }
 
-    "doc_keyword" and "doc_topic" are optional.
+    "source" and "label" for text classification.
+    "source" and "target" for semantic matching, text generation and machine translation.
     
 ## Configuration File
 
     "data_info": {
-        "data_filepath": "Datasets/nmt_data_word.json",
+        "data_filepath": "Datasets/nmt_data_word.json", # data path used for training
         "split_ratio": [
             0.7,
             0.15,
             0.15
         ],
-        "max_seq_length": 30,
-        "cutoff": 0,
+        "max_seq_length": 30, # max length of training data (trucation or pad to this length)
+        "cutoff": 0, # Filter out tokens whose word frequency is less than or equal to cutoff
         "seed": 1337
     },
     "train_info": {
@@ -47,8 +47,8 @@ Mini-DeepText aims to quickly implement neural models for text classification, s
         "vectorizer_file": "ModelFolder/trans_word_vectorizer.json",
         "model_state_file": "ModelFolder/trans_word_model.pth"
     },
-    "task": "translation",
-    "model_name": "Transformer",
+    "task": "translation", # ['classification', 'labeling', 'matching', 'translation']
+    "model_name": "Transformer", # ['TextCLRModel', 'TextSLBModel', 'TextDSMModel', 'TextNMTModel', 'Transformer']
     "model": {
         "TextCLRModel": {
             "embedding_size": 128,
