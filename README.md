@@ -1,4 +1,4 @@
-# Mini-DeepText: An Open-source Neural Text Experimental Toolkit
+# Mini-DeepText: An Open-source Neural Text Experimental Toolkit (Current version: v2.0)
 
 ## Introduction
 
