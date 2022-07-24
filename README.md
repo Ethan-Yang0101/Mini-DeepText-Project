@@ -14,8 +14,8 @@ Mini-DeepText aims to quickly implement neural models for text classification, s
     JSON example:
 
     {
-        "source": ["I,love,mini,deeptext,project,very,much"],
-        "target": ["我,非常,喜欢,迷你,DeepText,项目"],
+        "source": ["I","love","mini","deeptext","project","very","much"],
+        "target": ["我","非常","喜欢","迷你","DeepText","项目"],
         "label": ["AI"],
     }
 
